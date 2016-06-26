@@ -4,7 +4,7 @@ redisConn.keys("*").then((d)=>{
 })
 
 //redis utils
-import {mhgetall,mkeysexist,mzcount,mgetjson} from '../src/redisUtils';
+import {mhgetall,mkeysexist,mzcount,mgetjson} from '../src';
 mhgetall(redisConn,["session:token:81c3eb1332fc4f99914c488e54dca39d5d11193cc4bc0d6b8c4e1c3260564c2b",3,"session:token:ecf2df060bc9a1722bdf6169070c07b5b0ef70031efa6807e591da74cd3e921e"],{
   showEmptyObject:true
 }).then((data)=>{

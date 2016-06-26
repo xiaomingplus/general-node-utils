@@ -9,7 +9,7 @@
 ### 可以这样使用：
 
 
-    var {redisConn} = require('general-js-utils');
+    var {redisConn} = require('general-node-utils');
     var redis = redisConn();
     redis.keys("*").then(data=>{
       console.log(data);
